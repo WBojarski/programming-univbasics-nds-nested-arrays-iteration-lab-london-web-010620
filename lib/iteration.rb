@@ -47,7 +47,6 @@ def find_greater_pair(src)
 
 end
 
-
 def total_even_pairs(src)
     total = 0
     row_counter = 0
@@ -56,8 +55,9 @@ def total_even_pairs(src)
     column_counter = 0 
     while column_counter < src.length - 1 do
       inner_element = src[row_counter][column_counter]
-      if inner_element.to_i.even? 
-        total += inner_element.to_i 
+      inner_element2 = src[row_counter][column_counter + 1]
+      if inner_element.to_i.even? && inner_element2.to_i.even?
+        total += inner_element + inner_element2
         column_counter += 1
       else
         column_counter += 1
