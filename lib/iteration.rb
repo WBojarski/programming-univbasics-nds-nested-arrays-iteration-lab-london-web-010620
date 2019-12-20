@@ -53,7 +53,7 @@ def total_even_pairs(src)
 
   while row_counter < src.length do
     column_counter = 0 
-    while column_counter < src[row_counter.length - 1] do
+    while column_counter < src.row_counter.length - 1 do
       
       
       if src[row_counter][column_counter].even? && src[row_counter][column_counter + 1].to_i.even?
@@ -65,5 +65,7 @@ def total_even_pairs(src)
       row_counter += 1
     end
   end
+ total
+end
  total
 end
