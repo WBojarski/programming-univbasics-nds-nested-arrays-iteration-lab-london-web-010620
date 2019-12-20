@@ -57,7 +57,7 @@ def total_even_pairs(src)
       
       
       if src[row_counter][column_counter].to_i.even? && src[row_counter][column_counter + 1].to_i.even?
-        total += inner_element + inner_element2
+        total += src[row_counter][column_counter].to_i + src[row_counter][column_counter + 1].to_i
         column_counter += 1
       else
         column_counter += 1
